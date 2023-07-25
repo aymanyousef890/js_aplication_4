@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Aymoon</title>
+</head>
+
+<body>
+
+  <div class="login-box col-md-6 ">
+    <h2>Smart Login System</h2>
+    <div class="name user-box d-none">
+      <input type="text" id="name" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box ">
+      <input type="text" id="email" required="">
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="password" id="password" required="">
+      <label>Password</label>
+    </div>
+    <div class="warn text-danger text-capitalize mx-auto d-none ">All inputs is required</div>
+    <button id="btn1" class="mx-auto d-none d-flex px-5 py-2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>Sign Up
+    </button>
+    <button id="btn2" class="bum mx-auto  d-flex px-5 py-2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>Login
+    </button>
+
+    <div class="div1 d-none"> You have an account? <a id="in" href="#">Sign in</a></div>
+    <div class="div2"> Don't have an account? <a id="up" href="#">Sign Up</a></div>
+  </div>
+  <div class="main d-flex align-items-center justify-content-center d-none">
+    <nav class=" justify-content-between container-fluid d-flex shadow-lg p-3 mb-5 ">
+      <a class=" text-decoration-none fs-4 ms-5" href="#">SMART LOGIN</a>
+      <button class="btn btn-outline-info fs-5 logout me-5" id="out">Logout</button>
+    </nav>
+    <div class="box  shadow-lg text-light fs-1  " id="box">
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
