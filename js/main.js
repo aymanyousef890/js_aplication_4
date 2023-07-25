@@ -77,10 +77,16 @@ Signin.addEventListener('click', function (e) {
 
 })
 buttom2.addEventListener('click', function () {
-    if (emails.value == "" && pass.value == "") {
+    if (emails.value == "" || pass.value == "") {
         warn.classList.remove('text-success')
         warn.classList.add('text-danger')
         warn.innerHTML = "All inputs is required "
+        warn.classList.remove('d-none')
+    }
+    else if (localStorage.getItem('acount') == null) {
+        warn.classList.remove('text-success')
+        warn.classList.add('text-danger')
+        warn.innerHTML = "incorrect email or password "
         warn.classList.remove('d-none')
     }
     else {
@@ -99,6 +105,7 @@ function checkinu() {
         }
         else {
             warn.classList.remove('d-none')
+            warn.classList.add('text-danger')
             warn.innerHTML = "incorrect email or password"
 
         }
